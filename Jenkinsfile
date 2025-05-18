@@ -102,7 +102,7 @@ pipeline {
                         
                         # Check if there are changes to commit
                         if git diff --quiet; then
-                            echo "No changes to commit!."
+                            echo "No changes to commit!!."
                         else
                             git add .
                             git commit -m "[ci skip] Update image tag to ${DOCKER_TAG}"
